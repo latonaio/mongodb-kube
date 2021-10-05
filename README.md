@@ -16,7 +16,7 @@ mongodb-kubeは、kubernetes上での動作を前提としています。 kubern
 ## MongoDBについて
 MongoDBは、クロスプラットフォームのドキュメント指向データベースプログラムです。NoSQLデータベースプログラムとして分類されたMongoDBは、スキーマを持つJSONのようなドキュメントを使用します。AIONは、データエンジニアリング、データ準備、エッジでのIoT/AI環境のコアのプロビジョニングとして、MongoDBのデータスタックを提供します。
 
-エッジ環境はスペックの制限があるため、LatonaおよびAIONでは、機能性とパフォーマンスのバランスに優れているMariaDB(MySQL)を採用されています。
+エッジ環境はスペックの制限があるため、LatonaおよびAIONでは、機能性とパフォーマンスのバランスに優れているMongoDBが採用されています。
 なお、NoSQLには、MongoDBの他にDynamoDB、RedisやFirestoreなどがあります。
 
 - DynamoDB: フルマネージド型のため可用性が高い、開発コストが高い
