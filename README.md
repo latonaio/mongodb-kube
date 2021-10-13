@@ -19,7 +19,7 @@ MongoDBは、クロスプラットフォームのドキュメント指向デー�
 - Firestore:　スケーラビリティが高いが、開発コストが高い  
 
 ## AION における MongoDB のデプロイ・稼働
-[aion-core-manifests](https://github.com/latonaio/aion-core-manifests)の template>bases>mongo の deployment.yml に MongoDB をデプロイ・稼働させるために必要なyamlファイルが配置されています。
+[aion-core-manifests](https://github.com/latonaio/aion-core-manifests)の template/bases/mongo/deployment.yml に MongoDB をデプロイ・稼働させるために必要なyamlファイルが配置されています。
 
 ## ymlファイル（deployment.yml）の中身  
 ymlファイル（deployment.yml）の中身  
