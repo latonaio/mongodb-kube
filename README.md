@@ -1,5 +1,5 @@
-## 概要
-AION環境で MongoDB を立ち上げ稼働させるための、概要説明です。  
+# mongodb-kube  
+mongodb-kube は、AION環境で MongoDB を立ち上げ稼働させるための、概要説明です。  
 MongoDB 構築設定については、下記、もしくは、aion-core-manifests の template>bases>mongo 下にある deployment.yml を参照してください。
 
 ## 動作環境
