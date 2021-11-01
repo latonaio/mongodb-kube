@@ -1,6 +1,6 @@
 # mongodb-kube  
-mongodb-kube は、AION環境で MongoDB を立ち上げ稼働させるための、概要説明です。  
-MongoDB 構築設定については、下記、もしくは、aion-core-manifests の template>bases>mongo 下にある deployment.yml を参照してください。
+mongodb-kube は、主にエッジコンピューティング環境において、Kubernetes 上 で MongoDB を立ち上げ稼働させるための、概要説明 と 設定ファイル です。  
+MongoDB 構築設定については、本レポジトリ、もしくは、aion-core-manifests の template>bases>mongo 下にある deployment.yml を参照してください。  
 
 ## 動作環境
 ・ OS : Linux OS  
@@ -18,8 +18,31 @@ MongoDBは、クロスプラットフォームのドキュメント指向デー�
 - Redis: 処理速度が高いが、メモリ消費が高い
 - Firestore:　スケーラビリティが高いが、開発コストが高い  
 
-## AION における MongoDB のデプロイ・稼働
-[aion-core-manifests](https://github.com/latonaio/aion-core-manifests)の template/bases/mongo/deployment.yml に MongoDB をデプロイ・稼働させるために必要なyamlファイルが配置されています。
+## mongodb-kubeを用いたOMOTE-Bakoのエッジコンピューティングアーキテクチャ  
+mongodb-kubeは、下記の黄色い枠の部分のリソースです。  
+![mongo_omotebako](docs/omotebako_architecture.png)  
+
+
+## AION における MongoDB 1（メタデータ・ログの維持管理）
+AION プラットフォームにおいて、MongoDB は、mongodb-kube として、マイクロサービスとして エッジコンピューティング環境のKubrenetes上で稼働します。   
+MongoDB は、IoT や エッジAI の メタデータ・ログの維持管理のために優れており、本レポジトリに加えて、次のようなレポジトリを活用しながら、容易で効率的にデータを維持管理することができます。  
+
+* [fluentd-for-mongodb](https://github.com/latonaio/fluentd-for-mongodb)    
+
+* [fluentd-for-containers-mongodb-kube](https://github.com/latonaio/fluentd-for-containers-mongodb-kube)    
+
+* [insert-metadata-to-mongo](https://github.com/latonaio/insert-metadata-to-mongo)    
+
+## AION における MongoDB 2（データの可視化）  
+AION プラットフォームにおいて、次のようなレポジトリを活用しながら、MongoDB内のデータを可視化し、効率的に価値のあるデータをUIに表示することができます。   
+
+* [mongo-express-kube](https://github.com/latonaio/mongo-express-kube)    
+
+* [avis](https://github.com/latonaio/avis)    
+
+## MongoDB のデプロイ・稼働
+本レポジトリに deployment.yml が含まれています。
+また、[aion-core-manifests](https://github.com/latonaio/aion-core-manifests)の template/bases/mongo/deployment.yml に、AIONにおいて MongoDB をデプロイ・稼働させるために必要なyamlファイルが配置されています。
 
 ## ymlファイル（deployment.yml）の中身  
 ymlファイル（deployment.yml）の中身  
@@ -41,7 +64,7 @@ spec:
         app: mongo
     spec:
       containers:
-        - image: mongo:4.4
+        - image: mongo:5.0
           name: mongo
           resources:
             limits:
