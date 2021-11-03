@@ -89,15 +89,3 @@ spec:
           persistentVolumeClaim:
             claimName: mongo-pv-claim
 ```  
-
-## MongoDBについて
-MongoDBは、クロスプラットフォームのドキュメント指向データベースプログラムです。NoSQLデータベースプログラムとして分類されたMongoDBは、スキーマを持つJSONのようなドキュメントを使用します。AIONは、データエンジニアリング、データ準備、エッジでのIoT/AI環境のコアのプロビジョニングとして、MongoDBのデータスタックを提供します。
-
-エッジ環境はスペックの制限があるため、LatonaおよびAIONでは、機能性とパフォーマンスのバランスに優れているMongoDBが採用されています。
-なお、NoSQLには、MongoDBの他にDynamoDB、RedisやFirestoreなどがあります。
-
-- DynamoDB: フルマネージド型のため可用性が高い、開発コストが高い
-- Redis: 処理速度が高いが、メモリ消費が高い
-- Firestore:　スケーラビリティが高いが、開発コストが高い  
-
-
