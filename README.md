@@ -18,7 +18,7 @@ MongoDBは、クロスプラットフォームのドキュメント指向デー�
 - Redis: 処理速度が高いが、メモリ消費が高い
 - Firestore:　スケーラビリティが高いが、開発コストが高い  
 
-## mongodb-kubeを用いたOMOTE-Bakoのエッジコンピューティングアーキテクチャ  
+## mongodb-kubeを用いたエッジコンピューティングアーキテクチャ(OMOTE-Bakoアプリケーションの例)  
 mongodb-kubeは、下記の黄色い枠の部分のリソースです。  
 ![mongo_omotebako](docs/omotebako_architecture.png)  
 
