@@ -2,12 +2,13 @@
 mongodb-kube は、主にエッジコンピューティング環境において、Kubernetes 上 で MongoDB を立ち上げ稼働させるための、概要説明 と 設定ファイル です。  
 MongoDB 構築設定については、本レポジトリ、もしくは、aion-core-manifests の template>bases>mongo 下にある deployment.yml を参照してください。  
 
-## 動作環境
-・ OS : Linux OS  
-・ CPU: ARM/AMD/Intel  
-・ Kubernetes  
-・ AION  
+## 動作環境  
 
+* OS : Linux OS  
+* CPU: ARM/AMD/Intel  
+* Kubernetes  
+* AION  
+  
 ## MongoDBについて
 MongoDBは、クロスプラットフォームのドキュメント指向データベースプログラムです。NoSQLデータベースプログラムとして分類されたMongoDBは、スキーマを持つJSONのようなドキュメントを使用します。AIONは、データエンジニアリング、データ準備、エッジでのIoT/AI環境のコアのプロビジョニングとして、MongoDBのデータスタックを提供します。
 
