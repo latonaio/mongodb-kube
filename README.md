@@ -41,7 +41,7 @@ AION プラットフォームにおいて、次のようなレポジトリを活
 * [avis](https://github.com/latonaio/avis)    
 
 ## MongoDB のデプロイ・稼働
-本レポジトリに deployment.yml が含まれています。
+本レポジトリに mongodb-kube の deployment.yml が含まれています。
 また、[aion-core-manifests](https://github.com/latonaio/aion-core-manifests)の template/bases/mongo/deployment.yml に、AIONにおいて MongoDB をデプロイ・稼働させるために必要なyamlファイルが配置されています。
 
 ## ymlファイル（deployment.yml）の中身  
