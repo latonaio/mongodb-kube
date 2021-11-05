@@ -21,7 +21,7 @@ MongoDBは、クロスプラットフォームのドキュメント指向デー�
 
 ## mongodb-kubeを用いたエッジコンピューティングアーキテクチャ(OMOTE-Bakoアプリケーションの例)  
 mongodb-kubeは、下記の黄色い枠の部分のリソースです。  
-![mongo_omotebako](docs/omotebako_architecture.png)  
+![mongo_omotebako](docs/omotebako_architecture_20211105.drawio.png)  
 
 
 ## AION における MongoDB 1（メタデータ・ログの維持管理）
