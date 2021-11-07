@@ -7,7 +7,6 @@ MongoDB 構築設定については、本レポジトリ、もしくは、aion-c
 * OS : Linux OS  
 * CPU: ARM/AMD/Intel  
 * Kubernetes  
-* AION  
   
 ## MongoDBについて
 MongoDBは、クロスプラットフォームのドキュメント指向データベースプログラムです。NoSQLデータベースプログラムとして分類されたMongoDBは、スキーマを持つJSONのようなドキュメントを使用します。AIONは、データエンジニアリング、データ準備、エッジでのIoT/AI環境のコアのプロビジョニングとして、MongoDBのデータスタックを提供します。
