@@ -64,7 +64,7 @@ spec:
         app: mongo
     spec:
       containers:
-        - image: mongo:5.0
+        - image: mongo:6.0
           name: mongo
           resources:
             limits:
